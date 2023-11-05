@@ -8,6 +8,7 @@ class CardShoppingCart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      key: const Key("card"),
       child: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 10,

@@ -84,6 +84,7 @@ class _AddItemListState extends State<AddItemList> {
                 height: 0,
               ),
               TextFormField(
+                key: const Key("inputitem"),
                 controller: nameController,
                 decoration: const InputDecoration(
                   hintText: "Nome do item",
@@ -98,6 +99,7 @@ class _AddItemListState extends State<AddItemList> {
                 },
               ),
               TextFormField(
+                key: const Key("inputvalor"),
                 controller: priceController,
                 keyboardType: TextInputType.number,
                 decoration: const InputDecoration(
@@ -117,6 +119,7 @@ class _AddItemListState extends State<AddItemList> {
                     foregroundColor: Colors.blue,
                   ),
                   child: const Text(
+                    key: Key("BtnAdicionar"),
                     "Adicionar",
                     style: TextStyle(
                       color: Colors.blue,

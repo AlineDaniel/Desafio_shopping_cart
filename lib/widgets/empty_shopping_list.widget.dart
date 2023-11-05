@@ -10,6 +10,7 @@ class EmptyShoppingList extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset(
+          key: const Key("image"),
           "assets/lista-de-compras.png",
           height: 120,
         ),

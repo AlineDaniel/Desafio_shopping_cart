@@ -31,6 +31,7 @@ class _AddShoppingListPageState extends State<AddShoppingListPage> {
               Expanded(
                 child: Center(
                   child: TextField(
+                    key: const Key("input"),
                     controller: nameController,
                     decoration: const InputDecoration(
                       filled: true,
@@ -82,6 +83,7 @@ class _AddShoppingListPageState extends State<AddShoppingListPage> {
         Navigator.of(ctx).pop();
       },
       child: const Text(
+        key: Key("BtnVoltar"),
         "Voltar",
         style: TextStyle(
           color: Colors.white,
@@ -105,6 +107,7 @@ class _AddShoppingListPageState extends State<AddShoppingListPage> {
         }
       },
       child: const Text(
+        key: Key("BtnCriar"),
         "Criar",
         style: TextStyle(
           color: Colors.blue,

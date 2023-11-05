@@ -66,6 +66,7 @@ class _ItemListPageState extends State<ItemListPage> {
               Navigator.of(context).pop(items);
             },
             child: const Text(
+              key: Key("atualizar"),
               "Atualizar",
               style: TextStyle(
                 color: Colors.white,
@@ -117,6 +118,7 @@ class _ItemListPageState extends State<ItemListPage> {
       floatingActionButton: FloatingActionButton.extended(
         backgroundColor: Colors.blue,
         onPressed: addNewItem,
+        key: const Key("adicionar"),
         label: const Text("Adicionar"),
       ),
     );

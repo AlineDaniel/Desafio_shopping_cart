@@ -23,6 +23,7 @@ class _ItemTileState extends State<ItemTile> {
           scale: 1.5,
           alignment: Alignment.centerRight,
           child: Checkbox(
+            key: const Key("checkbox"),
             shape: const CircleBorder(),
             side: const BorderSide(
               color: Colors.blue,

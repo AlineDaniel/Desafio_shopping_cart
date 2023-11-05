@@ -21,7 +21,8 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Minhas listas"),
+        key:  const Key("title"),
+      title: const Text("Minhas listas"),
         centerTitle: true,
         actions: [
           IconButton(
@@ -53,6 +54,7 @@ class _ShoppingListPageState extends State<ShoppingListPage> {
               },
             ),
       floatingActionButton: FloatingActionButton(
+        key: const Key("btnAdd"),
         onPressed: addNewList,
         backgroundColor: Colors.blue,
         child: const Icon(Icons.add),
